@@ -91,11 +91,4 @@ defmodule RotationalCipherTest do
     shift = 60
     assert RotationalCipher.rotate(plaintext, shift) == "i"
   end
-
-  #@tag :pending
-  test "rotate by negative number" do
-    plaintext = "a"
-    shift = -1
-    assert RotationalCipher.rotate(plaintext, shift) == "z"
-  end
 end
